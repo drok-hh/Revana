@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="neon-aura">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Labaci Abdelkarim (@zx8lu) | Senior Full-Stack & Systems Expert</title>
+  <meta name="description" content="Labaci Abdelkarim (@zx8lu) — Full-Stack Engineer, FiveM Lua Architect and Windows System Optimization expert. Web & app development, UI/UX design, automation.">
+  <meta name="description" content="لاباتشي عبد الكريم (@zx8lu) — تطوير مواقع وتطبيقات، برمجة FiveM و Lua، تصميم واجهات وتحسين أنظمة الويندوز." lang="ar">
+  <meta name="theme-color" content="#06070d">
+  <meta name="author" content="Labaci Abdelkarim">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Social preview. The owner edits these from Dashboard → SEO. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar">
+  <meta property="og:title" content="Labaci Abdelkarim (@zx8lu) | Senior Full-Stack & Systems Expert">
+  <meta property="og:description" content="Full-stack engineering, FiveM Lua scripts, Windows optimization, web and app development services.">
+  <meta property="og:image" content="assets/media/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Labaci Abdelkarim (@zx8lu) | Senior Full-Stack & Systems Expert">
+  <meta name="twitter:description" content="Web & app development, FiveM Lua, UI/UX design and system optimization.">
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="ar" href="?lang=ar">
+  <link rel="alternate" hreflang="x-default" href="./">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://gouyijjocqyfdcgypjhy.supabase.co">
+  <link rel="dns-prefetch" href="https://w.soundcloud.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/aura.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Ccircle%20cx='16'%20cy='16'%20r='12'%20fill='none'%20stroke='%2300e5ff'%20stroke-width='2'/%3E%3C/svg%3E">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Labaci Abdelkarim",
+    "alternateName": "لاباتشي عبد الكريم",
+    "url": "./",
+    "sameAs": ["https://github.com/zx8lu"],
+    "jobTitle": "Senior Full-Stack & Systems Engineer",
+    "knowsAbout": ["Web development", "Application development", "FiveM Lua scripting", "UI/UX design", "Windows system optimization"],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Application Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "UI / UX Design" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Atmosphere -->
+  <div class="bg-gradients" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" data-i18n-attr="aria-label:a11y.navToggle" aria-expanded="false">☰</button>
+
+  <div class="shell">
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" id="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"></polyline><polyline points="16 6 21 12 16 18"></polyline></svg>
+        </span>
+        <span id="brand-name">Labaci Abdelkarim</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary" data-i18n-attr="aria-label:a11y.navPrimary"></nav>
+      <div class="side-foot">
+        <div class="lastlogin">
+          <span class="dots">•••</span>
+          <p class="muted" data-i18n="side.lastLogin">last login:</p>
+          <p class="mono" id="side-user">zx8lu@github</p>
+        </div>
+        <p class="side-prompt mono">-<span class="blink">$</span> _</p>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <div class="main">
+      <header class="topbar">
+        <span class="topbar-left">
+          <span class="prompt mono"><span id="prompt-user" role="button" tabindex="0" title="Menu">zx8lu</span></span>
+          <img id="admin-avatar" class="admin-avatar" alt="Administrator" hidden>
+        </span>
+        <nav class="crumbs mono" aria-label="Quick links" data-i18n-attr="aria-label:a11y.quickLinks">
+          <span>&lt;</span>
+          <a href="#code" data-i18n="nav.code">code</a><span>/</span>
+          <a href="#services" data-i18n="nav.services">services</a><span>/</span>
+          <a href="#gallery" data-i18n="crumb.games">games</a><span>/</span>
+          <a href="#music" data-i18n="nav.music">music</a><span>/</span>
+          <a href="#mentalist" data-i18n="crumb.mentalist">mentalist</a>
+          <span>&gt;</span>
+        </nav>
+        <span class="topbar-right" style="display:flex;align-items:center;gap:18px">
+          <button type="button" id="db-status" class="db-status" title="Database status" aria-live="polite"><i></i><span data-i18n="db.connecting">connecting…</span></button>
+          <button type="button" id="lang-toggle" class="lang-toggle" title="Change language" data-i18n-title="a11y.langChange" aria-label="Change language" data-i18n-attr="aria-label:a11y.langChange"><span id="lang-toggle-label">العربية</span></button>
+          <span class="status"><i></i> <span data-i18n="status.online">online</span></span>
+          <span class="win-controls" aria-hidden="true"><span>&#8212;</span><span>&#10005;</span></span>
+        </span>
+      </header>
+
+      <main class="content" id="app">
+        <!-- ================= HERO ================= -->
+        <section class="section hero" id="home">
+          <div class="window">
+            <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span class="window-title mono">zx8lu_system_v3.0.sh</span></div>
+            <div class="hero-inner">
+              <div class="hero-code">
+                <pre class="codeblock" aria-hidden="true"><code><span class="ln">1</span><span class="kw">while</span> (dreams) {
+<span class="ln">2</span>  <span class="fn">code</span>();
+<span class="ln">3</span>  <span class="fn">improve</span>();
+<span class="ln">4</span>  <span class="fn">be_better</span>();
+<span class="ln">5</span>}
+<span class="ln">6</span>
+<span class="ln">7</span><span class="cm">// keep going...</span></code></pre>
+                <div class="terminal-body" id="terminal-body"></div>
+                <div class="hero-meta">
+                  <span class="eyebrow" id="hero-eyebrow">Initialising</span>
+                  <span class="hero-name grad" id="hero-name">Labaci Abdelkarim</span>
+                  <span class="hero-greet mono" id="hero-greeting">Hello, World.</span>
+                  <span class="tagline" id="hero-tagline">A personal digital universe — loading…</span>
+                </div>
+              </div>
+              <div class="hero-visual">
+                <div class="dancer-wrap">
+                                      <video id="dancer-video" class="dancer" autoplay loop muted playsinline preload="auto">
+                    <source src="assets/media/dancer.mp4" type="video/mp4">
+                    <source src="assets/media/dancer.webm" type="video/webm">
+                                      </video>
+                                    </div>
+                <div class="sys-card">
+                  <div class="sys-photo">
+                    <img class="avatar" id="hero-avatar" alt="Portrait" data-i18n-attr="alt:a11y.portrait" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%230c1020'/%3E%3Ccircle cx='200' cy='185' r='66' fill='none' stroke='%237c5cff' stroke-width='4' opacity='.55'/%3E%3Cpath d='M104 356 q96 -86 192 0' fill='none' stroke='%237c5cff' stroke-width='4' opacity='.55'/%3E%3Ctext x='200' y='432' fill='%238a93b8' font-family='monospace' font-size='22' text-anchor='middle'%3Eadd your photo%3C/text%3E%3C/svg%3E">
+                    <canvas class="code-overlay" id="hero-canvas" aria-hidden="true"></canvas>
+                    <div class="sys-photo-fade" aria-hidden="true"></div>
+                    <span class="sys-tag mono">&lt;/&gt; <span id="hero-tag-text">Full-Stack &amp; Lua</span></span>
+                    <span class="sys-online mono">ONLINE</span>
+                  </div>
+                  <div class="sys-diag">
+                    <span class="sys-comment">// System Diagnostic Status</span>
+                    <div class="sys-line"><span class="kw">const</span> developer = {</div>
+                    <div class="sys-line">&nbsp;&nbsp;name: <span class="st">"<span id="diag-name">LABACI ABDELKARIM</span>"</span>,</div>
+                    <div class="sys-line">&nbsp;&nbsp;role: <span class="st">"<span id="diag-role">Creative Developer</span>"</span>,</div>
+                    <div class="sys-line">&nbsp;&nbsp;location: <span class="st">"<span id="diag-location">Planet Earth</span>"</span>,</div>
+                    <div class="sys-line">&nbsp;&nbsp;interests: [<span class="st">"Programming"</span>, <span class="st">"Web Development"</span>, <span class="st">"Digital Art"</span>],</div>
+                    <div class="sys-line">&nbsp;&nbsp;stack: <span id="diag-skills">[<span class="st">"JS"</span>, <span class="st">"Lua"</span>, <span class="st">"CSS"</span>]</span>,</div>
+                    <div class="sys-line">&nbsp;&nbsp;status: <span class="ok">"Available"</span></div>
+                    <div class="sys-line">};<span class="sys-caret" aria-hidden="true"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= CONNECT (social links are owner-managed) ===== -->
+        <section class="connect" id="contact">
+          <span class="eyebrow mono" data-i18n="connect.eyebrow">// connect</span>
+          <div class="connect-row" id="connect-row">
+            <span class="connect-note mono" data-i18n="connect.loading">[ loading links… ]</span>
+          </div>
+        </section>
+
+        <!-- ================= PROJECTS + SKILLS ================= -->
+        <div class="cols">
+          <section class="panel" id="code">
+            <header class="panel-head">
+              <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.projects">Projects</span></h2>
+              <a class="viewall" href="#code"><span data-i18n="nav.viewAll">View all →</span></a>
+            </header>
+            <div class="tag-row" id="tech-row" style="margin-bottom:16px"></div>
+            <div class="grid grid-auto" id="projects-grid"></div>
+          </section>
+          <section class="panel" id="skills">
+            <header class="panel-head">
+              <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.skills">Skills</span></h2>
+              <a class="viewall" href="#skills"><span data-i18n="nav.viewAll">View all →</span></a>
+            </header>
+            <div class="skills-grid" id="skills-grid"></div>
+          </section>
+        </div>
+
+        <!-- ================= SERVICES (orderable) ================= -->
+        <section class="section panel" id="services">
+          <header class="panel-head">
+            <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.services">Services</span></h2>
+            <a class="viewall" href="#services"><span data-i18n="nav.viewAll">View all →</span></a>
+          </header>
+          <p class="section-lede" data-i18n="services.lede">Digital services you can order — development, design and everything between.</p>
+          <div class="tag-row" id="service-filters" style="margin-bottom:14px"></div>
+          <div class="grid grid-auto" id="services-grid"></div>
+        </section>
+
+        <!-- ================= GALLERY + MUSIC ================= -->
+        <div class="cols even">
+          <section class="panel" id="gallery">
+            <header class="panel-head">
+              <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.gallery">Gallery</span></h2>
+              <a class="viewall" href="#gallery"><span data-i18n="nav.viewAll">View all →</span></a>
+            </header>
+            <div class="tag-row" id="gallery-filters" style="margin-bottom:14px"></div>
+            <div class="gal-justified" id="gallery-grid"></div>
+          </section>
+          <section class="panel" id="music">
+            <header class="panel-head">
+              <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.music">Music</span></h2>
+              <a class="viewall" href="#music"><span data-i18n="nav.viewAll">View all →</span></a>
+            </header>
+            <div class="grid grid-auto" id="music-grid"></div>
+            <div class="wavebar" aria-hidden="true"><div class="bars"><i style="height:6px"></i><i style="height:12px"></i><i style="height:20px"></i><i style="height:9px"></i><i style="height:16px"></i><i style="height:24px"></i><i style="height:11px"></i><i style="height:7px"></i><i style="height:18px"></i><i style="height:22px"></i><i style="height:10px"></i><i style="height:14px"></i><i style="height:26px"></i><i style="height:8px"></i><i style="height:13px"></i><i style="height:19px"></i><i style="height:23px"></i><i style="height:9px"></i><i style="height:15px"></i><i style="height:21px"></i><i style="height:7px"></i><i style="height:17px"></i><i style="height:25px"></i><i style="height:12px"></i><i style="height:6px"></i><i style="height:20px"></i><i style="height:11px"></i><i style="height:16px"></i><i style="height:22px"></i><i style="height:8px"></i><i style="height:14px"></i><i style="height:18px"></i><i style="height:10px"></i><i style="height:24px"></i></div><span class="mono">&lt;/&gt;</span></div>
+            <div class="player" id="player" hidden>
+              <img id="player-art" alt="Album art" src="">
+              <div class="meta"><b id="player-title">—</b><span id="player-artist">—</span>
+                <audio id="player-audio" controls preload="none"></audio>
+              </div>
+              <div style="display:flex;gap:6px">
+                <button class="btn btn-ghost btn-sm" id="player-prev" aria-label="Previous" data-i18n-attr="aria-label:music.prev">⏮</button>
+                <button class="btn btn-ghost btn-sm" id="player-next" aria-label="Next" data-i18n-attr="aria-label:music.next">⏭</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section panel" id="about">
+          <header class="panel-head">
+            <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.about">About</span></h2>
+            <a class="viewall" href="#about"><span data-i18n="nav.viewAll">View all →</span></a>
+          </header>
+          <p id="about-intro" style="color:var(--c-muted);margin-top:0" data-i18n="about.loading">Loading profile…</p>
+          <div class="grid grid-auto" id="about-grid"></div>
+        </section>
+
+        <!-- ================= MENTALIST / ARCHIVE ================= -->
+        <section class="section panel" id="mentalist">
+          <header class="panel-head">
+            <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.archive">Archive</span></h2>
+            <a class="viewall" href="#mentalist"><span data-i18n="nav.viewAll">View all →</span></a>
+          </header>
+          <div class="mentalist-grid" id="mentalist-grid"></div>
+        </section>
+
+        <!-- ================= WRITING ================= -->
+        <section class="section panel" id="writing">
+          <header class="panel-head">
+            <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.blog">Blog</span></h2>
+            <a class="viewall" href="#writing"><span data-i18n="nav.viewAll">View all →</span></a>
+          </header>
+          <div class="grid grid-auto" id="writing-grid"></div>
+        </section>
+
+        <!-- ================= VIDEO ================= -->
+        <section class="section panel" id="video">
+          <header class="panel-head">
+            <h2><span class="mono">&lt;/&gt;</span> <span data-i18n="sec.video">Video</span></h2>
+            <a class="viewall" href="#video"><span data-i18n="nav.viewAll">View all →</span></a>
+          </header>
+          <div class="grid grid-auto" id="video-grid"></div>
+        </section>
+
+        <!-- ================= EXTRA SECTIONS (dynamic) ================= -->
+        <div id="extra-sections"></div>
+
+        <!-- ================= STICKERS ================= -->
+        <section class="stickers" aria-label="Stickers" data-i18n-attr="aria-label:a11y.stickers">
+          <div class="sticker-note">// Better code<br>// Better tomorrow</div>
+          <div class="sticker-row">
+            <span class="sticker sticker-logo" aria-hidden="true">&lt;/&gt;</span>
+          </div>
+        </section>
+      </main>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="site-footer">
+        <span>© <span id="foot-year"></span> <span id="foot-name">Labaci Abdelkarim</span> | <span data-i18n="foot.built">Built with passion</span> <span class="mono">&lt;/&gt;</span></span>
+        <span class="foot-extra">
+          <span id="foot-note" data-i18n="foot.note">Built with care.</span>
+          <a href="#" id="setup-link" data-i18n="foot.setup">Setup guide</a>
+          <span id="admin-trigger" role="button" tabindex="0" aria-label="Decorative" data-i18n-attr="aria-label:a11y.decorative"></span>
+        </span>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ================= ANNOUNCEMENT BANNER (owner-controlled) ========== -->
+  <div class="banner" id="banner" hidden>
+    <span class="banner-dot" aria-hidden="true"></span>
+    <span class="banner-text" id="banner-text"></span>
+    <a class="banner-link" id="banner-link" hidden target="_blank" rel="noopener noreferrer" data-i18n="banner.more">Details ›</a>
+    <button class="banner-close" id="banner-close" type="button" aria-label="Dismiss" data-i18n-attr="aria-label:banner.close">✕</button>
+  </div>
+
+  <!-- ================= GLOBAL MUSIC BAR ================= -->
+  <div class="music-bar" id="music-bar" aria-label="Music player" data-i18n-attr="aria-label:a11y.musicPlayer">
+    <button class="mb-art" id="mb-art-btn" type="button" aria-label="Play or pause music" data-i18n-attr="aria-label:a11y.playPause">
+      <img id="mb-art" alt="" src="" hidden>
+      <span class="mb-eq" id="mb-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="mb-play" id="mb-play" aria-hidden="true">▶</span>
+    </button>
+    <div class="mb-meta">
+      <b id="mb-title">—</b>
+      <span id="mb-artist" class="mono">—</span>
+      <div class="mb-track"><span class="mb-fill" id="mb-fill"></span></div>
+    </div>
+    <div class="mb-actions">
+      <button class="mb-btn" id="mb-prev" type="button" aria-label="Previous track" data-i18n-attr="aria-label:music.prev">⏮</button>
+      <button class="mb-btn mb-main" id="mb-toggle" type="button" aria-label="Start music" data-i18n-attr="aria-label:music.start"><span id="mb-toggle-label" data-i18n="music.start">Start music</span></button>
+      <button class="mb-btn" id="mb-next" type="button" aria-label="Next track" data-i18n-attr="aria-label:music.next">⏭</button>
+      <button class="mb-btn" id="mb-list" type="button" aria-label="Change track" data-i18n-attr="aria-label:music.change" aria-expanded="false" data-i18n="music.change">Change</button>
+      <span class="mb-vol">
+        <button class="mb-btn mb-icon" id="mb-vol-down" type="button" aria-label="Lower volume" data-i18n-attr="aria-label:music.volDown">&#8722;</button>
+        <input class="mb-range" id="mb-vol" type="range" min="0" max="100" step="5" value="70" aria-label="Volume" data-i18n-attr="aria-label:music.volume">
+        <button class="mb-btn mb-icon" id="mb-vol-up" type="button" aria-label="Raise volume" data-i18n-attr="aria-label:music.volUp">+</button>
+      </span>
+      <button class="mb-btn" id="mb-mute" type="button" aria-label="Mute" aria-pressed="false" data-i18n-attr="aria-label:music.mute">🔊</button>
+      <button class="mb-btn mb-close" id="mb-hide" type="button" aria-label="Hide player" data-i18n-attr="aria-label:a11y.hidePlayer" data-i18n="music.stop">Stop</button>
+    </div>
+    <div class="mb-list" id="mb-list-menu" hidden role="menu" aria-label="Playlist" data-i18n-attr="aria-label:a11y.playlist"></div>
+  </div>
+
+  <!-- ================= SERVICE REQUEST FORM ================= -->
+  <div class="modal-scrim" id="request-scrim" role="dialog" aria-modal="true" aria-labelledby="request-title">
+    <div class="modal" id="request-modal">
+      <button class="btn btn-ghost btn-sm" id="request-close" type="button" style="float:right" aria-label="Close" data-i18n-attr="aria-label:dash.act.close">✕</button>
+      <h3 id="request-title" data-i18n="request.title">Request this service</h3>
+      <p class="modal-lede" data-i18n="request.lede">Tell me what you need. I reply personally.</p>
+      <form id="request-form" novalidate>
+        <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp-field" id="request-hp">
+        <input type="hidden" id="request-service-id">
+        <label for="request-service" data-i18n="request.service">Service</label>
+        <select id="request-service" data-i18n-select></select>
+
+        <label for="request-name" data-i18n="request.name">Your name</label>
+        <input id="request-name" name="name" type="text" maxlength="120" required autocomplete="name">
+
+        <label for="request-contact" data-i18n="request.contact">Email or Telegram</label>
+        <input id="request-contact" name="contact" type="text" maxlength="200" required autocomplete="email">
+
+        <label for="request-budget" data-i18n="request.budget">Budget (optional)</label>
+        <input id="request-budget" name="budget" type="text" maxlength="60" placeholder="$">
+
+        <label for="request-deadline" data-i18n="request.deadline">Deadline (optional)</label>
+        <input id="request-deadline" name="deadline" type="text" maxlength="60">
+
+        <label for="request-brief" data-i18n="request.brief">Project details</label>
+        <textarea id="request-brief" name="brief" rows="5" maxlength="4000" required></textarea>
+
+        <div class="form-msg" id="request-msg" aria-live="polite"></div>
+        <button class="btn btn-primary btn-block" id="request-btn" type="submit" data-i18n="request.send">Send request</button>
+        <p class="form-hint mono" data-i18n="request.privacy">Only the owner can read requests.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= COMMAND PALETTE (Ctrl+K) ================= -->
+  <div class="modal-scrim" id="palette-scrim" role="dialog" aria-modal="true" aria-label="Command palette" data-i18n-attr="aria-label:a11y.palette">
+    <div class="palette">
+      <input id="palette-input" type="text" autocomplete="off" placeholder="Search sections, services, actions…" aria-label="Search">
+      <ul id="palette-list" role="listbox" aria-label="Results"></ul>
+      <p class="palette-foot mono">↑↓ <span data-i18n="palette.move">move</span> · ⏎ <span data-i18n="palette.open">open</span> · esc <span data-i18n="palette.close">close</span></p>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lb-close" aria-label="Close" data-i18n-attr="aria-label:dash.act.close">✕</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous" data-i18n-attr="aria-label:music.prev">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next" data-i18n-attr="aria-label:music.next">›</button>
+    <div class="lb-cap" id="lb-cap"></div>
+  </div>
+
+  <!-- ================= ADMIN LOGIN (Supabase Auth: email + password) ====
+       The owner's email is NOT embedded in this page — visitors type
+      their own credentials and RLS decides who is an administrator. ==== -->
+  <div class="modal-scrim" id="login-scrim">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <h3 id="login-title" data-i18n="login.title">Administrator</h3>
+      <p class="modal-lede" data-i18n="login.hint">Restricted access — sign in with the owner account.</p>
+      <form id="login-form">
+        <label for="admin-email" data-i18n="login.email">Email</label>
+        <input id="admin-email" name="email" type="email" autocomplete="username" inputmode="email" required spellcheck="false">
+        <label for="admin-password" data-i18n="login.password">Password</label>
+        <div class="pw-wrap">
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+          <button type="button" id="pw-toggle" aria-label="Show password" data-i18n-attr="aria-label:login.show">👁</button>
+        </div>
+        <div class="form-msg" id="login-msg" aria-live="polite"></div>
+        <button class="btn btn-primary btn-block" id="login-btn" type="submit" data-i18n="login.unlock">Unlock</button>
+        <p class="form-hint mono" data-i18n="login.offline">Offline mode: set a device password on first unlock.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= ADMIN DASHBOARD SHELL ================= -->
+  <div class="admin" id="admin" role="dialog" aria-modal="true" aria-label="Admin dashboard">
+    <header class="admin-header" id="admin-header"></header>
+    <div class="admin-body">
+      <aside class="admin-side" id="admin-side"></aside>
+      <div class="admin-main" id="admin-main"></div>
+    </div>
+  </div>
+
+  
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+  <!-- Firebase has been fully removed. Supabase is the only remote backend. -->
+  <script src="assets/js/core/config.js" defer></script>
+  <script src="assets/js/core/util.js" defer></script>
+  <script src="assets/js/core/i18n.js" defer></script>
+  <script src="assets/js/core/db.js" defer></script>
+  <script src="assets/js/core/auth.js" defer></script>
+  <script src="assets/js/core/upload.js" defer></script>
+  <script src="assets/js/core/themes.js" defer></script>
+  <script src="assets/js/core/music.js" defer></script>
+  <script src="assets/js/fx/bg-canvas.js" defer></script>
+  <script src="assets/js/core/requests.js" defer></script>
+  <script src="assets/js/app/render.js" defer></script>
+  <script src="assets/js/app/palette.js" defer></script>
+  <script src="assets/js/app/backup.js" defer></script>
+  <script src="assets/js/app/dashboard.js" defer></script>
+<div class="modal-scrim" id="setup-scrim" role="dialog" aria-modal="true">
+  <div class="modal wide">
+    <button class="btn btn-ghost btn-sm" id="setup-close" style="float:right" aria-label="Close" data-i18n-attr="aria-label:dash.act.close">&#10005;</button>
+    <h3 data-i18n="dash.setup.title">First-time setup</h3>
+    <p style="color:var(--c-muted);font-size:.9rem" data-i18n="dash.setup.lede">
+      This site stores its content in your own Supabase project. Four SQL files finish the setup.
+    </p>
+    <ol class="setup-steps" style="color:var(--c-muted);font-size:.9rem;padding-inline-start:22px">
+      <li data-i18n="dash.setup.step1">Open your Supabase project, SQL Editor, New query.</li>
+      <li data-i18n="dash.setup.step2">Run the schema, RLS, storage and Arabic files in order.</li>
+      <li data-i18n="dash.setup.step3">Create the admin user.</li>
+      <li data-i18n="dash.setup.step4">Run the seed file.</li>
+      <li data-i18n="dash.setup.step5">Close public sign-ups.</li>
+      <li data-i18n="dash.setup.step6">Open the site and click the site name five times.</li>
+    </ol>
+    <div style="display:flex;gap:8px;align-items:center;margin:14px 0 8px;flex-wrap:wrap">
+      <b data-i18n="dash.setup.sqlTitle">Supabase SQL</b>
+      <button class="btn btn-primary btn-sm" id="setup-copy-fs" type="button" data-i18n="dash.setup.copyAll">Copy all SQL</button>
+      <button class="btn btn-ghost btn-sm" id="setup-reload" type="button" data-i18n="dash.act.recheck">Re-check database</button>
+      <span class="form-msg" id="setup-msg"></span>
+    </div>
+    <pre id="setup-sql" dir="ltr" lang="en" style="max-height:42vh;overflow:auto;background:rgba(0,0,0,.45);padding:14px;border-radius:10px;font-size:.75rem;white-space:pre;border:1px solid var(--c-border)">Loading SQL&#8230;</pre>
+  </div>
+</div>
+  <!-- SQL shown by the setup modal is fetched from assets/sql/setup.sql -->
+<script type="text/plain" id="fs-source">/* Firebase rules are no longer used. See the Supabase SQL above. */</script>
+<script src="assets/js/app/setup.js" defer></script>
+<script src="assets/js/fx/dancer.js" defer></script>
+  <script src="assets/js/fx/hero-code.js" defer></script>
+
+  <script src="assets/js/app/guard.js" defer></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("sw.js").catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>
